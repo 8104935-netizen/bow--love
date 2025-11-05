@@ -1,0 +1,35 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="}SdE|431[|kP4fGbZzvQ">mySprite</variable><variable type="KIND_SpriteKind" id="kg)zDW4!gzMkibK.Ns[f">Player</variable><variable type="KIND_SpriteKind" id="Gg|hIO/XR}rpL%YL2Bh7">Projectile</variable><variable type="KIND_SpriteKind" id="|R6v-1;2a~QCB:cHN{A+">Food</variable><variable type="KIND_SpriteKind" id="Z.::[fHy[?fIx}T=_R-J">Enemy</variable><variable type="KIND_SpriteKind" id="*)*dJfnVAD[oz3lhNX|:">POPPY</variable></variables><block type="pxt-on-start" id="*:PQX3)}rh~4}EUkW?`}" x="0" y="0"><statement name="HANDLER"><block type="music_playable_play" id="6AjUJAKY$kpiq:k8{#wm"><field name="playbackMode">music.PlaybackMode.LoopingInBackground</field><value name="toPlay"><shadow type="music_song_field_editor" id="$2/0zsv*+oPx+fCk-#C4"><field name="song">hex`0078000408020600001c00010a006400f401640000040000000000000000000000000005000004060004000800012701001c000f05001202c102c2010004050028000000640028000314000602000406000c001000012203001c0001dc00690000045e0100040000000000000000000005640001040003060004000800011e05001c000f0a006400f4010a00000400000000000000000000000000000000024c0004000800011e0c001000012210001400012514001800041d1e202218001c00021e221c002000021e2224002800021b2228002c00011d2c00300002222730003400041b1d292a34003800011d06001c00010a006400f40164000004000000000000000000000000000000000206001c002000012709010e02026400000403780000040a000301000000640001c80000040100000000640001640000040100000000fa0004af00000401c80000040a00019600000414000501006400140005010000002c0104dc00000401fa0000040a0001c8000004140005d0076400140005d0070000c800029001f40105c201f4010a0005900114001400039001000005c201f4010500058403050032000584030000fa00049001000005c201f4010500058403c80032000584030500640005840300009001049001000005c201f4010500058403c80064000584030500c8000584030000f40105ac0d000404a00f00000a0004ac0d2003010004a00f0000280004ac0d9001010004a00f0000280002d00700040408070f0064000408070000c80003c800c8000e7d00c80019000e64000f0032000e78000000fa00032c01c8000ee100c80019000ec8000f0032000edc000000fa0003f401c8000ea901c80019000e90010f0032000ea4010000fa0001c8000004014b000000c800012c01000401c8000000c8000190010004012c010000c80002c800000404c8000f0064000496000000c80002c2010004045e010f006400042c010000640002c409000404c4096400960004f6090000f40102b80b000404b80b64002c0104f40b0000f401022003000004200300040a000420030000ea01029001000004900100040a000490010000900102d007000410d0076400960010d0070000c8000600200021000101`</field><data>{"commentRefs":[],"fieldData":{"song":null}}</data></shadow></value><next><block type="game_setgameovereffect" id="Ztj:Wzcf~lS[3XtE|H2k"><field name="effect">effects.confetti</field><value name="win"><shadow type="toggleWinLose" id="BiWI.k0X#`cTme-h8!37"><field name="win">true</field></shadow></value><next><block type="game_dialog_set_cursor" id="_5f,-^shJa9qxRvHnrc_"><value name="frame"><shadow type="screen_image_picker" id="C7_nDRe`^|KV)lqNp{pQ"><field name="img">img`
+. . . . b b b b . . . . . . . . 
+. . . b 3 3 3 3 b b b b . . . . 
+. . b b 3 3 3 3 3 1 1 b b c c . 
+. . b 1 1 3 3 3 3 3 1 1 3 3 c c 
+. . b 1 1 3 3 3 3 3 3 3 3 3 b c 
+. . c 3 3 3 3 3 3 3 c c c b b f 
+. c 3 3 3 3 3 b b b b c c c b f 
+c 3 3 3 3 b b d d d d d c c b f 
+c 3 3 c b d d d d d d c d c c . 
+f 3 c c c d d c d d d c d b c . 
+f b c c c d d d c d d d d d f . 
+f b c c c d d d d d b b b d f . 
+f f b b c b d d d d d d d c . . 
+. f f f f b c c d d d d f f . . 
+. . f b d d b c c f f b b f f . 
+. . f d d d b . . f f b b b f . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":null}}</data></shadow></value><next><block type="game_control_sprite" id=")%^D~Vh+$(!S~RsW`KDJ"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="2" _input_init="true"></mutation><value name="sprite"><block type="variables_get" id="Ug7ehdY.@XoV!J5FT16a"><field name="VAR" id="}SdE|431[|kP4fGbZzvQ">mySprite</field></block></value><value name="vx"><shadow type="spriteSpeedPicker" id="]9St-!ya`10Nq[L1(jcK"><field name="speed">100</field></shadow></value><value name="vy"><shadow type="spriteSpeedPicker" id="h-Tm#kAPpR+|u?c|{MEu"><field name="speed">100</field></shadow></value><next><block type="game_setgameovermessage" id="QR~v8|!Ww$h_bO|w,AWS"><value name="message"><shadow type="text" id="C%NeB3PX.6[yE_!2in-G"><field name="TEXT">YOU WON!</field></shadow></value><value name="win"><shadow type="toggleWinLose" id="JVhBc(FiZ6DInm8bgS$0"><field name="win">true</field></shadow></value><next><block type="game_setgameovermessage" id="C_L$|xa1sG8B*/tFq@Y|"><value name="message"><shadow type="text" id=",+NO6Lb/$}~f1|zW{Hwc"><field name="TEXT">YOU LOST!</field></shadow></value><value name="win"><shadow type="toggleWinLose" id="nHQDYZc;I5ty?.2-sq$i"><field name="win">false</field></shadow></value><next><block type="variables_set" id="WQO}!M2:zW47))Jsq0bu"><field name="VAR" id="}SdE|431[|kP4fGbZzvQ">mySprite</field><value name="VALUE"><shadow type="math_number" id="FrncfwSy,h49Y=~].id:"><field name="NUM">0</field></shadow><block type="spritescreate" id="iM`)#=/KpeFimEs2B)v%"><value name="img"><shadow type="screen_image_picker" id="G^5yIKK_Yh7K$U*1#:@+"><field name="img">img`
+. . . . . f f 4 4 f f . . . . . 
+. . . . f 5 4 5 5 4 5 f . . . . 
+. . . f e 4 5 5 5 5 4 e f . . . 
+. . f b 3 e 4 4 4 4 e 3 b f . . 
+. . f 3 3 3 3 3 3 3 3 3 3 f . . 
+. f 3 3 e b 3 e e 3 b e 3 3 f . 
+. f 3 3 f f e e e e f f 3 3 f . 
+. f b b f b f e e f b f b b f . 
+. f b b e 1 f 4 4 f 1 e b b f . 
+f f b b f 4 4 4 4 4 4 f b b f f 
+f b b f f f e e e e f f f b b f 
+. f e e f b d d d d b f e e f . 
+. . e 4 c d d d d d d c 4 e . . 
+. . e f b d b d b d b b f e . . 
+. . . f f 1 d 1 d 1 d f f . . . 
+. . . . . f f b b f f . . . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":null}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="1wQb%_]lafGo0MvMsKL9"><field name="MEMBER">POPPY</field></shadow></value></block></value><next><block type="device_change_tempo" id="Zk3+9j=8;rqWz?LZG8.w"><value name="value"><shadow type="math_number" id="88TtNkGb4j_:CiqFXv7w"><field name="NUM">2e+22</field></shadow></value></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></statement></block></xml>
